@@ -48,6 +48,7 @@ function forms(formSelector, modalTimerId) {
                     })
                     .catch(() => {
                         showThanksModal(message.failure);
+                        statusMessage.remove(); 
                     })
                     .finally(() => {
                         form.reset();

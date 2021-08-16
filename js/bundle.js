@@ -369,6 +369,7 @@ function modal(triggerSelector, modalSelector, modalTimerId) {
     
 
     function showModalByScroll(){
+        console.log('kek');
         if (document.documentElement.scrollTop + document.documentElement.clientHeight >= document.documentElement.scrollHeight){
             openModal(modalSelector, modalTimerId); 
             window.removeEventListener('scroll', showModalByScroll);
